@@ -23,6 +23,8 @@ jobs:
           pip install -r requirements.txt
       - name: Test annotations
         run: mypy graphframes
+      - name: Test install
+        run: pip install .
 
   lint:
     runs-on: ubuntu-latest
